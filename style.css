@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    /* overflow: hidden; */
+}
+
+body{
+    width: 100%;
+    height: 90vh;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.548);
+}
+
+.branding{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a i{
+    margin-right: 10px;
+}
+
+.navbar-links a:hover{
+    transition: 0.3s;
+    text-shadow: 3px 3px 20px #9900ff85,
+    -2px 1px 20px #9900ff85;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1{
+    font-size: 70px;
+}
+
+span{
+    color: #8E20C2;
+}
+
+button{
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    position: relative;
+
+}
+
+.btn-started{
+    background: linear-gradient(to right, #aa6dce 15%, #b35192 100%);
+    color: white;
+}
+
+.btn-review{
+    color: #8E20C2;
+    border: 2px solid #8E20C2;
+}
+
+button:hover{
+    background: linear-gradient(to right, #aa6dce 15%, #b35192 100%);
+    letter-spacing: 0.2em;
+    width: 290px;
+    height: 70px;
+    transition: 0.5s;
+    color: white;
+    font-size: 25px;
+    border: none;
+}
+
+img{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+
+
+.toggle-btn{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.bar{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #8E20C2;
+
+}
+
+@media screen and (max-width: 481px){
+    body{
+        overflow: hidden;
+    }
+    
+    section{
+        margin-top: -100px;
+    }
+    
+    button{
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    button:hover{
+        box-shadow: none;
+        background-color: #8E20C2;
+        width: 180px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .btn-started:hover{
+        letter-spacing: 0.1em;
+    }
+
+    section h1{
+        margin-bottom: 20px;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    img{
+        width: 300px;
+        bottom: 5%;
+        left: 15%;
+    }
+
+    .navbar-links{
+        width: 100%;
+        display: none;
+    }
+
+    .toggle-btn{
+        display: flex;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(233, 233, 233);
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links.active{
+        display: flex;
+        
+    }
+
+    .navbar-links a:hover{
+        text-shadow: none;
+    }
+
+    .navbar-links li:hover{
+        background-color: rgb(216, 216, 216);
+        transition: 0.3s;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 482px) {
+    body{
+        overflow: hidden;
+    }
+    
+    section h1{
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .navbar-links{
+        width: 100%;
+        display: none;
+        background-color: rebeccapurple;
+    }
+
+    .toggle-btn{
+        display: flex;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(233, 233, 233);
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links.active{
+        display: flex;
+        
+    }
+
+    .navbar-links a:hover{
+        text-shadow: none;
+    }
+
+    .navbar-links li:hover{
+        background-color: rgb(216, 216, 216);
+        transition: 0.3s;
+    }
+
+    img{
+        width: 600px;
+        top: 200px;
+        left: 100px;
+    }
+
+    form{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 769px){
+    section h1{
+        margin-top: -150px;
+        text-align: center;
+    }
+    img{
+        left: 20%;
+    }
+}
